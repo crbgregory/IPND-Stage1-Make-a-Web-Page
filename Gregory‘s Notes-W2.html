@@ -1,15 +1,17 @@
 <!-- This is my first HTML Page. -->
 <!DOCTYPE html>
-<html>
+<html lang="en"> <!-- This lets the browser know that the website is in english.
+  This is helpful for search engines and for blind users that use [screen readers](http://www.chromevox.com/)
+   (programs that read out the website loud) -->
 <head>
-  <meta charset="UTF-8">
-  <title>Gregory's Notes</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8"> <!-- This lets the browser know that you are using the utf-8 character encoding -->
+  <title>Gregory's Notes</title> <!-- This will be displayed on the tab in the browser -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <div class="body">
+  <div class="navi">
       <h1>My List</h1>
       <ol>
         <li><a href="#mylist-1">Lesson Summary: From beginning to now</a>
@@ -39,11 +41,11 @@
     </div>
 
 
- <div>
-   <h1>Basic knowledge</h1>
+ <div class="summary">
+   <h2>Basic knowledge</h2>
 
  <div class="summary">
-   <h2 id="mylist-1">Lesson Summary: From beginning to now</h2>
+   <h3 id="mylist-1">Lesson Summary: From beginning to now</h3>
 
    <div class="concept" id="mylist-1-1">
      <div class="concept-title">
@@ -78,25 +80,26 @@
      </div>
      <div class="concept-content">
        <div class="appimage">
-       <p>
-         <b><em>HyperText Markup Language (HTML)</em></b>
-         is the standard markup language for creating web pages and web applications.
-         With Cascading Style Sheets (CSS), and JavaScript, it forms a triad of cornerstone technologies
-         for the World Wide Web.[1] Web browsers receive HTML documents from a webserver or from local
-         storage and render them into multimedia web pages. HTML describes the structure of a web page semantically
-         and originally included cues for the appearance of the document. HTML elements are the building blocks of HTML pages.
-         With HTML constructs, images and other objects, such as interactive forms may be embedded into the rendered page.
-         It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs,
-         lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.
-         <a href="https://en.wikipedia.org/wiki/HTML"> This page</a> gives a good overview.
-        <div>
-          <img src="image\200px-HTML_svg.png" alt="HTML">
+         <div class="app-cell">
+         <p>
+           <b><em>HyperText Markup Language (HTML)</em></b>
+            is the standard markup language for creating web pages and web applications.
+            With Cascading Style Sheets (CSS), and JavaScript, it forms a triad of cornerstone technologies
+            for the World Wide Web.[1] Web browsers receive HTML documents from a webserver or from local
+            storage and render them into multimedia web pages. HTML describes the structure of a web page semantically
+            and originally included cues for the appearance of the document. HTML elements are the building blocks of HTML pages.
+            With HTML constructs, images and other objects, such as interactive forms may be embedded into the rendered page.
+            It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs,
+            lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.
+            <a href="https://en.wikipedia.org/wiki/HTML"> This page</a> gives a good overview.
+          </p>
+        </div>
+        <div class="image-cell">
+            <img src="image/200px-HTML_svg.png" alt="The picture of HTML">
+          </div>
         </div>
       </div>
-      </div>
-
-     </p>
-   </div>
+    </div>
 
    <div class="concept" id="mylist-1-4">
      <div class="concept-title">
@@ -115,7 +118,7 @@
 
 
     <div class="summary">
-     <h2 id="mylist-2">My Thinking: What to do NEXT</b></h2>
+     <h3 id="mylist-2">My Thinking: What to do NEXT</h3>
 
      <div class="concept" id="mylist-2-1">
        <div class="concept-title">
@@ -133,7 +136,7 @@
 
 
    <div class="summary">
-     <h2 id="mylist-3">Interesting: To be continue...</h2>
+     <h3 id="mylist-3">Interesting: To be continue...</h3>
      <div class="concept" id="mylist-3-1">
        <div class="concept-title">
          <p><b>What To Do</b></P>
@@ -148,7 +151,7 @@
      </div>
 
      <div class="summary">
-       <h2 id="mylist-4">My APP TEST Part</h2>
+       <h3 id="mylist-4">My APP TEST Part</h3>
        <div class="concept" id="mylist-4-1">
          <div class="concept-title">
            <p><b>Test</b></P>
@@ -165,21 +168,6 @@
    </div>
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
 
 </body>
 </html>

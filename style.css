@@ -1,5 +1,5 @@
 /* This is a CSS comment.*/
-body {
+.navi {
 	padding: 20px 10px;
 	font-family: Arial;
 	max-width: 2000px;
@@ -14,8 +14,8 @@ li {
 
 ul {
   list-style-type:none;
-  margin:1;
-  padding:1;
+  margin:2px;
+  padding:2px;
 }
 
 .summary {
@@ -62,8 +62,19 @@ h2 {
   box-sizing: border-box;
   }
 
-.appimage { display: flex; }
+.appimage {
+  display: flex;
+  flex-flow: row wrap;
+	justify-content: space-between;
+}
 
+.app-cell {
+  flex:1;
+}
+
+.image-cell {
+  flex: 0 0 18%;
+}
 
 /*
 Comments are only to help PEOPLE read a code file. The
